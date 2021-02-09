@@ -1,0 +1,20 @@
+﻿<Window x:Class="IconResourceDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="IconResourceDemo" Height="600" Width="800">
+	<Window.Resources>
+		<BitmapImage x:Key="exampleImage" UriSource="/IconResourceDemo;Image_16x.png" />
+	</Window.Resources>
+	<DockPanel>
+		<ToolBarTray DockPanel.Dock="Top">
+			<ToolBar>
+				<Button>
+					<Image Source="{StaticResource exampleImage}" />
+				</Button>
+			</ToolBar>
+		</ToolBarTray>
+	</DockPanel>
+</Window>
