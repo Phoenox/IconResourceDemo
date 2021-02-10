@@ -23,6 +23,8 @@ target_sources(${PROJECT_NAME}
     "Image_16x.png"
 )
 
+set_property(SOURCE "Image_16x.png" PROPERTY VS_TOOL_OVERRIDE "Resource")
+
 CSHARP_SET_DESIGNER_CS_PROPERTIES(
     "Properties/AssemblyInfo.cs"
     "Properties/Resources.Designer.cs"
